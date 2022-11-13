@@ -1,7 +1,13 @@
 from flask import Flask, flash, redirect, render_template, request, url_for
+from flask_frozen import Freezer
 
 # Configure application
 app = Flask(__name__)
+
+freezer = Freezer(app)
+
+if __name__ == 'main':
+    freezer.freeze()
 
 # Ensure templates are auto-reloaded <-- Basically, changes are updated in real time
 app.config["TEMPLATES_AUTO_RELOAD"] = True
