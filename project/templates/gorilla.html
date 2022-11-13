@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Members
+{% endblock %}
+
+{% block main %}
+    <div class="container-fluid" style="margin-top: 80px;">
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-xxl-3 mx-3">
+                <img src="/static/gorilla.jpg" height="600px" alt="Gorilla" style="margin-bottom: 20px;">
+            </div>
+
+            <div class="col-xxl-5 mx-3">
+
+                <h1>Virtual Gorilla</h1>
+                <p class="text-center">バーチャルゴリラ &nbsp <a href="https://www.youtube.com/channel/UCjtEttSHpJacfd7a6fc4VXQ" target="_blank" rel="noopener noreferrer"><img src="/static/yt.png" height="30px"></a></p>
+
+                <div class="row justify-content-center" style="font-weight: 500; font-size:16px; margin-bottom: 20px;">
+                    <div class="col-3">
+                        Birthday: 01/13
+                    </div>
+
+                    <div class="col-6">
+                        Nicknames: Gori-chan, Bachagori
+                    </div>
+
+                    <div class="col-3">
+                        Affiliation: VEEMusic
+                    </div>
+                </div>
+
+                <p class="text-start mx-auto" style="font-weight: 500; font-size:18px;">A gorilla who loves singing and playing games. He has a calm personality
+                and a deep voice, and his FPS skills are a force to be reckoned with! He sometimes does "Muscle Training Apex" with his friends, where he and his
+            teammates suffer workouts if they perform poorly in Apex Legends matches.</p>
+
+                <div class="youtube-video-container">
+                    <iframe class="d-block youtube-video" src="https://www.youtube.com/embed/EUY-yQzQGo0" style="pointer-events: auto; margin-top:20px; margin-bottom:30px;"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
